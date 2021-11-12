@@ -3,8 +3,7 @@ from ipywidgets import interact, fixed
 from PIL import Image
 
 def imshow(X, resize=None):
-    image=Image.fromarray(img)
+    image=Image.fromarray(X)
     if resize!=None:
-        image = image.resize((new_width, new_height), Image.ANTIALIAS)
+        image = image.resize(resize)
     image.show()
-    pass
